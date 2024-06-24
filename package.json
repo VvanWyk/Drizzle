@@ -1,0 +1,29 @@
+{
+  "name": "drizzle",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "tsx src/drizzle/migrate.ts",
+    "db:studio": "npx drizzle-kit studio"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.2",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "drizzle-kit": "^0.22.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
